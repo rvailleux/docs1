@@ -32,10 +32,6 @@ In the exemple below, we use [https://izeeconf.com/join/fancy-mare](https://izee
 ```
 {% endcode %}
 
-{% embed url="https://codepen.io/rvailleux/pen/PoaZYdb" %}
-Most basic use of the ApiRTC Embedded
-{% endembed %}
-
 ### Go further
 
 * [​Display a specific conversation ​​ ](go-further/point-to-a-specific-conversation.md): this is instrumental if you want to actually talk to someone.
