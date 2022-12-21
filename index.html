@@ -1,0 +1,328 @@
+
+<!DOCTYPE HTML>
+<html lang="fr" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Getting started with ApiRTC Embedded · Gitbook - Mode d'emploi</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="All you need to know to bootstrap a web page with a videoconference tool in it.">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="équipe Formateurs & Référents SIG">
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-advanced-emoji/emoji-website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-local-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-page-toc/page-toc.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-hints/plugin-hints.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="go-further/point-to-a-specific-conversation.md" />
+    
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Tapez pour rechercher" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://formationsig.gitlab.io/toc/" target="_blank" class="custom-link">Accueil - Formations SIG</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter active" data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Getting started with ApiRTC Embedded
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">🌟 Go Further</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="go-further/point-to-a-specific-conversation.md">
+            
+                <span>
+            
+                    
+                    Point to a specific conversation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="go-further/customize-look-and-feel.md">
+            
+                <span>
+            
+                    
+                    Customize look and feel
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="go-further/activate-and-deactivate-features.md">
+            
+                <span>
+            
+                    
+                    Activate and deactivate features
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Publié avec GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Getting started with ApiRTC Embedded</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="getting-started-with-apirtc-embedded">Getting started with ApiRTC Embedded</h1>
+<p>ApiRTC Embedded enables you to quickly insert a video conferencing interface into any webpage.</p>
+<p>In this tutorial, we are going to go through all the step to insert the embedded component into a web page.</p>
+<h3 id="prerequisite">Prerequisite</h3>
+<ul>
+<li>Get an ApiRTC active account on <a href="http://cloud.apizee.com" target="_blank">http://cloud.apizee.com</a>.</li>
+<li>Retrieve your api key at <a href="https://cloud.apizee.com/enterprise/api" target="_blank">https://cloud.apizee.com/enterprise/api</a></li>
+<li>Go on your cloud.apizee.com Dashboard and make sure your account has enough minutes of communication credited <a href="https://cloud.apizee.com/dashboardapi" target="_blank">https://cloud.apizee.com/dashboardapi</a></li>
+</ul>
+<h3 id="insert-the-apirtc-embedded-component-into-a-web-page">Insert the ApiRTC Embedded component into a web page</h3>
+<p>The ApiRTC Embedded component should be inserted into an <code>&lt;IFrame&gt;</code> HTML tag pointing to a webpage instanciating a new video conference room.</p>
+<p>The URL is composed of <code>https://izeeconf.com/join/</code>, ended by a random string pointing a conversation name.</p>
+<p>In the exemple below, we use <a href="https://izeeconf.com/join/fancy-mare" target="_blank">https://izeeconf.com/join/fancy-mare</a> as a target URL. </p>
+<p>
+```html
+  <iframe style="width:100%; height:800px" src="https://izeeconf.com/join/fancy-mare">
+```
+</iframe></p>
+<h3 id="go-further">Go further</h3>
+<ul>
+<li><a href="go-further/point-to-a-specific-conversation.md">&#x200B;Display a specific conversation &#x200B;&#x200B; </a>: this is instrumental if you want to actually talk to someone.</li>
+<li><a href="go-further/activate-and-deactivate-features.md">Activate or deactivate features</a> : make sure your users has all they need</li>
+<li><a href="go-further/customize-look-and-feel.md">Customize the look &amp; feel </a>: colors, shapes, positions to make you feel at home</li>
+</ul>
+<footer class="page-footer"><span class="copyright">powered by Gitbook</span><span class="footer-modification">Inrap - &#xE9;quipe Formateurs &amp; R&#xE9;f&#xE9;rents SIG - document g&#xE9;n&#xE9;r&#xE9; le 
+21-12-2022 16:59:25
+</span></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                
+                <a href="go-further/point-to-a-specific-conversation.md" class="navigation navigation-next navigation-unique" aria-label="Next page: Point to a specific conversation">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"description":"All you need to know to bootstrap a web page with a videoconference tool in it.","cover":".gitbook/assets/1516304704454.jpeg","coverY":0,"title":"Getting started with ApiRTC Embedded","level":"1.1","depth":1,"next":{"title":"Point to a specific conversation","level":"2.1","depth":1,"path":"go-further/point-to-a-specific-conversation.md","ref":"go-further/point-to-a-specific-conversation.md","articles":[]},"dir":"ltr"},"config":{"plugins":["advanced-emoji","copy-code-button","get-book","embed-pdf","local-pagefooter","page-toc","-lunr","-search","search-plus","hints","-livereload"],"license":"CC BY-NC-SA 3.0 FR","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"get-book":{"label":"Télécharger le PDF","url":"https://gitlab.com/formationsig/gitbook/-/jobs/artifacts/master/raw/public/gitbook.pdf?job=pages"},"page-toc":{"position":"before-first","selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4","showByDefault":true},"local-pagefooter":{"islocal":true,"modify_label":"Inrap - équipe Formateurs & Référents SIG - document généré le ","modify_format":"DD-MM-YYYY HH:mm:ss"},"hints":{"danger":"fa fa-exclamation-circle","info":"fa fa-info-circle","tip":"fa fa-mortar-board","working":"fa fa-wrench"},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"copy-code-button":{},"advanced-emoji":{"embedEmojis":false},"sharing":{"facebook":false,"twitter":false,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"embed-pdf":{},"search-plus":{}},"theme":"default","author":"équipe Formateurs & Référents SIG","pdf":{"pageNumbers":false,"fontSize":11,"fontFamily":"Roboto","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":56,"left":56,"top":56,"bottom":56},"toc":true},"repo":"https://gitlab.com/formationsig/gitbook","structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Gitbook - Mode d'emploi","language":"fr","links":{"sidebar":{"Accueil - Formations SIG":"https://formationsig.gitlab.io/toc/"},"sharing":{"all":["twitter","facebook"],"facebook":false,"google":false,"twitter":false}},"gitbook":"*","description":"fake-document pour tester gitbook integré à gitlab, nottament les plugins"},"file":{"path":"README.md","mtime":"2022-12-21T16:59:25.790Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-12-21T17:00:27.132Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-get-book/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-page-toc/anchor-3.1.1.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-page-toc/page-toc.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
